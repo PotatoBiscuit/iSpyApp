@@ -1,0 +1,58 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    android:minWidth="200sp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="iSpy"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="125sp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add/Delete Cameras"
+        android:id="@+id/buttonAddC"
+        android:onClick="GoToAddC"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:minWidth="200sp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View Cameras"
+        android:id="@+id/buttonVC"
+        android:onClick="GoToVC"
+        android:layout_below="@+id/buttonAddC"
+        android:layout_centerHorizontal="true"
+        android:minWidth="200sp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add/Delete Events"
+        android:id="@+id/buttonAddE"
+        android:onClick="GoToAddE"
+        android:layout_below="@+id/buttonVC"
+        android:layout_centerHorizontal="true"
+        android:minWidth="200sp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View Event Output"
+        android:id="@+id/buttonVEO"
+        android:onClick="GoToVEO"
+        android:layout_below="@+id/buttonAddE"
+        android:layout_centerHorizontal="true"
+        android:minWidth="200sp" />
+</RelativeLayout>
